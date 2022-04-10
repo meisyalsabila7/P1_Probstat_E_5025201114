@@ -187,3 +187,17 @@ rataan = lambda
 varian = lambda * lambda
 ```
 ![5C](https://user-images.githubusercontent.com/94627623/162624967-4acdc548-9428-41bd-b6b3-749348d6a58f.jpg)
+
+## Soal 6
+Diketahui generate random nilai sebanyak 100 data, mean = 50, sd = 8. Tentukan
+### 6.a
+Fungsi Probabilitas dari Distribusi Normal P(X1 ≤ x ≤ X2), hitung Z-Score Nya dan plot data generate randomnya dalam bentuk grafik. Petunjuk(gunakan fungsi plot()).
+```
+mean = 50
+sd = 8
+n = 100
+z = rnorm(n, mean, sd)
+
+plot(z)
+```
+![6A](https://user-images.githubusercontent.com/94627623/162625236-dcfc8e59-78bf-4fa5-93df-582c0451219e.jpg)
