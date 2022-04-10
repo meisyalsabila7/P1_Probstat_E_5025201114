@@ -70,9 +70,26 @@ varian = (1-p)/ p^2
 Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2. Tentukan :
 ### 2.a
 Peluang terdapat 4 pasien yang sembuh.
-
+```
+n = 20
+p = 0.2
+x = 4
+peluang = dbinom(x, n, p, FALSE)
+```
 ### 2.b
 Gambarkan grafik histogram berdasarkan kasus tersebut.
-
+```
+hist(rbinom(x, n, p), xlab = "x", ylab = "Frekuensi", main = "Histogram of Binomial")
+```
+![2_B](https://user-images.githubusercontent.com/94627623/162607451-ddde8fb2-eabd-406c-a884-e98fe720c066.jpg)
 ### 2.c
 Nilai Rataan (μ) dan Varian (σ²) dari DistribusiBinomial.
+* Rataan
+```
+rataan = n * (prob = p)
+```
+* Varian
+```
+varian = n * (prob = p) * (1-(prob = p))
+```
+![2_AC](https://user-images.githubusercontent.com/94627623/162607449-4ec69553-45bb-42af-a156-920f0f4203ff.jpg)
