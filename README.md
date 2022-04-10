@@ -13,11 +13,13 @@ p = 0.20
 n = 3
 dgeom(x = n, prob = p)
 ```
+![1_A](https://user-images.githubusercontent.com/94627623/162606358-589d288f-88af-46d8-8b6a-118a8ac63ebd.jpg)
 ### 1.b
 mean Distribusi Geometrik dengan 10000 data random , prob = 0,20 dimana distribusi geometrik acak tersebut X = 3 ( distribusi geometrik acak () == 3 )
 ```
 mean(rgeom(n = 10000, prob = p) == 3)
 ```
+![1_B](https://user-images.githubusercontent.com/94627623/162606359-0d7d2515-6d7b-47c4-a7e4-d7680007d090.jpg)
 ### 1.c
 Bandingkan Hasil poin a dan b , apa kesimpulan yang bisa didapatkan?
 ``` 
@@ -51,6 +53,7 @@ data.frame(x = 0:10, prob = dgeom(x = 0:10, prob = p)) %>%
        x = "Kegagalan sebelum kesuksesan pertama (x)",
        y = "Probabilitas")
 ```
+![1_D](https://user-images.githubusercontent.com/94627623/162606360-7d213927-b100-4b6c-a20c-facc2a43a657.jpg)
 ### 1.e
 Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik.
 * Rataan (μ) 
@@ -61,6 +64,7 @@ miu = 1/p
 ```
 varian = (1-p)/ p^2
 ```
+![1_E](https://user-images.githubusercontent.com/94627623/162606362-bd2bb40d-60f4-451b-aabd-60792bdfaf65.jpg)
 
 ## Soal 2
 Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2. Tentukan :
