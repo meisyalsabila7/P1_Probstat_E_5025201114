@@ -158,6 +158,7 @@ Fungsi Probabilitas dari Distribusi Exponensial
 ```
 Peluang = dexp(3)
 ```
+![5A](https://user-images.githubusercontent.com/94627623/162624963-9b1d0539-495e-4749-82c3-b4e8cf18738f.jpg)
 ### 5.b
 Histogram dari Distribusi Exponensial untuk 10, 100, 1000 dan 10000 bilangan random
 ```
@@ -171,6 +172,7 @@ hist(rexp(1000))
 set.seed(1)
 hist(rexp(10000))
 ```
+![5B](https://user-images.githubusercontent.com/94627623/162624965-df5e62dd-58ef-49e0-874e-5dd9eee74733.jpg)
 ### 5.c
 Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Exponensial untuk n = 100 dan λ = 3
 ```
@@ -184,3 +186,4 @@ rataan = lambda
 ```
 varian = lambda * lambda
 ```
+![5C](https://user-images.githubusercontent.com/94627623/162624967-4acdc548-9428-41bd-b6b3-749348d6a58f.jpg)
