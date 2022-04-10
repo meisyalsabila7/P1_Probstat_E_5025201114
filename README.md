@@ -93,3 +93,41 @@ rataan = n * (prob = p)
 varian = n * (prob = p) * (1-(prob = p))
 ```
 ![2_AC](https://user-images.githubusercontent.com/94627623/162607449-4ec69553-45bb-42af-a156-920f0f4203ff.jpg)
+
+## Soal 3
+Diketahui data dari sebuah tempat bersalin di rumah sakit tertentu menunjukkan rata-rata historis 4,5 bayi lahir di rumah sakit ini setiap hari. (gunakan Distribusi Poisson)
+### 3.a
+Berapa peluang bahwa 6 bayi akan lahir di rumah sakit ini besok?
+```
+lamda = 4.5
+x = 6
+Peluang = dpois(x, lamda)
+```
+![3_A](https://user-images.githubusercontent.com/94627623/162608958-65874746-ee71-45ea-a869-d14f6ba9ad2f.jpg)
+### 3.b
+Simulasikan dan buatlah histogram kelahiran 6 bayi akan lahir di rumah sakit ini selama setahun (n = 365)
+```
+x = 6
+n = 356
+hist(rpois(n, lamda), main = "Histogram Poisson")
+```
+![3_B](https://user-images.githubusercontent.com/94627623/162608960-240e1dd5-c271-4de8-bbab-93791a86c0c5.jpg)
+### 3.c
+Bandingkan hasil poin a dan b , Apa kesimpulan yang bisa didapatkan
+```
+Perbandingan tidak terpaut jauh
+```
+### 3.d
+Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Poisson.
+```
+mean = varian = lamda
+```
+
+## Soal 4
+Diketahui nilai x = 2 dan v = 10. Tentukan:
+### 4.a
+Fungsi Probabilitas dari Distribusi Chi-Square.
+### 4.b
+Histogram dari Distribusi Chi-Square dengan 100 data random.
+### 4.c
+Nilai Rataan (μ) dan Varian (σ²) dari DistribusiChi-Square.
