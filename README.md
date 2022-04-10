@@ -127,7 +127,26 @@ mean = varian = lamda
 Diketahui nilai x = 2 dan v = 10. Tentukan:
 ### 4.a
 Fungsi Probabilitas dari Distribusi Chi-Square.
+```
+x = 2
+v = 10
+Peluang = dchisq(x, 10)
+```
 ### 4.b
 Histogram dari Distribusi Chi-Square dengan 100 data random.
+```
+n = 100
+hist(rchisq(n, v), xlab = "X", ylab = "V", main = "Grafik Histogram")
+```
+![4_B](https://user-images.githubusercontent.com/94627623/162609408-4f4ca89d-b365-4b4d-a2f3-8de84e10661b.jpg)
 ### 4.c
 Nilai Rataan (μ) dan Varian (σ²) dari DistribusiChi-Square.
+* Rataan
+```
+rataan = v
+```
+* Varan
+```
+varian = 2 * v
+```
+![4_AC](https://user-images.githubusercontent.com/94627623/162609406-157fd9e0-4bcf-4e15-87eb-1942b0f76bb1.jpg)
