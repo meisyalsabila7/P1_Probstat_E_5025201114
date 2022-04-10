@@ -150,3 +150,37 @@ rataan = v
 varian = 2 * v
 ```
 ![4_AC](https://user-images.githubusercontent.com/94627623/162609406-157fd9e0-4bcf-4e15-87eb-1942b0f76bb1.jpg)
+
+## Soal 5
+Diketahui bilangan acak (random variable) berdistribusi exponential (λ = 3). Tentukan
+### 5.a
+Fungsi Probabilitas dari Distribusi Exponensial
+```
+Peluang = dexp(3)
+```
+### 5.b
+Histogram dari Distribusi Exponensial untuk 10, 100, 1000 dan 10000 bilangan random
+```
+par(mfrow = c(2,2))
+set.seed(1)
+hist(rexp(10))
+set.seed(1)
+hist(rexp(100))
+set.seed(1)
+hist(rexp(1000))
+set.seed(1)
+hist(rexp(10000))
+```
+### 5.c
+Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Exponensial untuk n = 100 dan λ = 3
+```
+lambda = 3
+```
+* Rataan
+```
+rataan = lambda
+```
+* Varian
+```
+varian = lambda * lambda
+```
